@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "your-project-name"
+version = "0.1.0"
+description = "A short description of your project."
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rasa = "^1.10.2"
+rasa-sdk = "^3.12.0"
+# Add other dependencies here
+
+[tool.poetry.dev-dependencies]
+# Add dev dependencies here
