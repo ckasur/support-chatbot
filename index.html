@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Support Chatbot</title>
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+</head>
+<body>
+  <h2>Welcome to Our Support Chatbot</h2>
+  <div id="webchat"></div>
+  <script>
+    WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/greet",
+      customData: {"language": "en"}, // optional
+      socketUrl: "http://localhost:5005/",  // ← replace with your Rasa URL
+      socketPath: "/socket.io/",
+      title: "Support Bot",
+      subtitle: "Ask me anything!",
+      inputTextFieldHint: "Type your message...",
+      showFullScreenButton: true
+    });
+  </script>
+</body>
+</html>
