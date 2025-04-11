@@ -1,14 +1,16 @@
 [tool.poetry]
-name = "your-project-name"
+name = "support-chatbot"
 version = "0.1.0"
-description = "A short description of your project."
+description = "A chatbot built using Rasa."
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"  # Ensure compatibility with rasa-sdk
 rasa = "^1.10.2"
-rasa-sdk = "^3.12.0"
-# Add other dependencies here
+rasa-sdk = "^3.12.0"  # Ensure this matches the version you're using
+SQLAlchemy = "^1.3.24"
+PyJWT = "^1.7.1"
+absl-py = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
-# Add dev dependencies here
+pytest = "^6.2.5"
