@@ -13,8 +13,8 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # Install the required Python version
-pyenv install 3.11.11
-pyenv global 3.11.11
+pyenv install 3.10.14
+pyenv global 3.10.14
 
 # Then run your build steps
 poetry install
