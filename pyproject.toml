@@ -5,9 +5,9 @@ description = "A chatbot built using Rasa."
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.13"  # Ensure compatibility with rasa-sdk
-rasa = "^1.10.2"
-rasa-sdk = "^3.12.0"  # Ensure this matches the version you're using
+python = ">=3.8,<3.13"  # Ensure compatibility with rasa-sdk
+rasa = "^3.12"  # Update to the latest compatible version of rasa
+rasa-sdk = "^3.12"  # Ensure both versions are compatible
 SQLAlchemy = "^1.3.24"
 PyJWT = "^1.7.1"
 absl-py = "^0.9.0"
