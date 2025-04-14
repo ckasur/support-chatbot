@@ -4,11 +4,8 @@ version = "0.1.0"
 description = "A chatbot built using Rasa."
 authors = ["Your Name <your.email@example.com>"]
 
-# Python compatibility: Rasa supports >=3.8 and <3.11
-python = ">=3.8,<3.11"
-
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"  # Ensure compatibility with Rasa
+python = ">=3.8,<3.11"  # Python version compatibility constraint for the project
 rasa = "^3.6.21"  # Specify the Rasa version you're using
 rasa-sdk = "^3.6.2"  # Ensure compatibility with Rasa
 SQLAlchemy = "^1.3.24"
